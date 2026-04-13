@@ -1,5 +1,27 @@
-let count=0;
-function addToCart() {
+let count = 0;
+let total = 0;
+
+function addToCart(price) {
   count++;
-  document.getElementById("cart").innerText="cart"+ count;
+  total += price;
+
+  document.getElementById("cart").innerText = "Cart: " + count;
+  document.getElementById("total").innerText = "Total: ₹" + total;
+}
+function removeFromCart(price) {
+  if (count > 0) {
+    count--;
+    total -= price;   // ⭐ यही main fix है
+
+    document.getElementById("cart").innerText = "Cart: " + count;
+    document.getElementById("total").innerText = "Total: ₹" + total;
+  }
+}
+
+function resetCart() {
+  count = 0;
+  total = 0;
+
+  document.getElementById("cart").innerText = "Cart: 0";
+  document.getElementById("total").innerText = "Total: ₹0";
 }

@@ -9,33 +9,39 @@
 <body>
   <h1>shoes store</h1>
   <h2 id="cart"> cart: 0</h2>
+ <h3 id="total">Total: ₹0</h3>
+ <p id="msg"></p>
   <div class="container">
     <div class="product">
       <div class="img-box">
-      <img src="shopping.webp" alt="shoes"></div>
+      <img src="/shoes_store/images/shopping.webp" alt="shoes"></div>
       <h3>Running shoes</h3>
       <p>999</p>
-      <button onclick="addToCart()"> Add To Cart</button>
-    </div>
+      <button onclick="addToCart(999)">Add to Cart</button>
+      <button onclick="removeFromCart(999)">Remove</button>
+      </div>
     <div class="product">
        <div class="img-box">
-      <img src="shopping (1).webp" alt="shoes"></div>
+      <img src="/shoes_store/images/shopping (1).webp" alt="shoes"></div>
       <h3>Running shoes</h3>
       <p>888</p>
-      <button onclick="addToCart()"> Add To Cart</button>
+      <button onclick="addToCart(888)">Add to Cart</button>
+      <button onclick="removeFromCart(888)">Remove</button>
+      
      </div>
        <div class="product">
         <div class="img-box">
-      <img src="shopping (2).webp" alt="shoes"></div>
+      <img src="/shoes_store/images/shopping (2).webp" alt="shoes"></div>
       <h3>Running shoes</h3>
-
-
       <p>666</p>
-      <button onclick="addToCart()"> Add To Cart</button>
+      <button onclick="addToCart(666)">Add to Cart</button>
+      <button onclick="removeFromCart(666)">Remove</button>
+      
 
     </div>
+    
   </div>
-  
+  <button onclick="resetCart()">Reset</button>
 </body>
 <script src="index.js"></script>
 </html>
