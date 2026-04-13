@@ -7,6 +7,7 @@ function addToCart(price) {
 
   document.getElementById("cart").innerText = "Cart: " + count;
   document.getElementById("total").innerText = "Total: ₹" + total;
+  document.getElementById("msg").innerText = "Item Added!";
 }
 function removeFromCart(price) {
   if (count > 0) {
@@ -15,6 +16,7 @@ function removeFromCart(price) {
 
     document.getElementById("cart").innerText = "Cart: " + count;
     document.getElementById("total").innerText = "Total: ₹" + total;
+    document.getElementById("msg").innerText = "Item Removed!";
   }
 }
 
@@ -24,4 +26,5 @@ function resetCart() {
 
   document.getElementById("cart").innerText = "Cart: 0";
   document.getElementById("total").innerText = "Total: ₹0";
+  document.getElementById("msg").innerText = "Cart Reset!";
 }
