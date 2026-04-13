@@ -12,7 +12,7 @@ function addToCart(price) {
 function removeFromCart(price) {
   if (count > 0) {
     count--;
-    total -= price;   // ⭐ यही main fix है
+    total -= price; // ⭐ यही main fix है
 
     document.getElementById("cart").innerText = "Cart: " + count;
     document.getElementById("total").innerText = "Total: ₹" + total;
@@ -27,4 +27,20 @@ function resetCart() {
   document.getElementById("cart").innerText = "Cart: 0";
   document.getElementById("total").innerText = "Total: ₹0";
   document.getElementById("msg").innerText = "Cart Reset!";
+}
+
+function searchProduct() {
+  let input = document.getElementById("search").value.toLowerCase();
+  let product = document.getElementsByClassName("product");
+
+  for (i = 0; i < product.length; i++) {
+    let name = product[i].getElementsByClassName("pname")[0];
+    let text = name.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      product[i].style.display = "block";
+    } else {
+      product[i].style.display = "none";
+    }
+  }
 }

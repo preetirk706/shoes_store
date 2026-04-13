@@ -1,47 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <h1>shoes store</h1>
-  <h2 id="cart"> cart: 0</h2>
- <h3 id="total">Total: ₹0</h3>
- <p id="msg"></p>
-  <div class="container">
-    <div class="product">
-      <div class="img-box">
-      <img src="/shoes_store/images/shopping.webp" alt="shoes"></div>
-      <h3>Running shoes</h3>
-      <p>999</p>
-      <button onclick="addToCart(999)">Add to Cart</button>
-      <button onclick="removeFromCart(999)">Remove</button>
-      </div>
-    <div class="product">
-       <div class="img-box">
-      <img src="/shoes_store/images/shopping (1).webp" alt="shoes"></div>
-      <h3>Running shoes</h3>
-      <p>888</p>
-      <button onclick="addToCart(888)">Add to Cart</button>
-      <button onclick="removeFromCart(888)">Remove</button>
-      
-     </div>
-       <div class="product">
-        <div class="img-box">
-      <img src="/shoes_store/images/shopping (2).webp" alt="shoes"></div>
-      <h3>Running shoes</h3>
-      <p>666</p>
-      <button onclick="addToCart(666)">Add to Cart</button>
-      <button onclick="removeFromCart(666)">Remove</button>
-      
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>shoes store</h1>
+    <div>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search products..."
+        onkeyup="searchProduct()"
+      />
     </div>
-    
-  </div>
-  <button onclick="resetCart()">Reset</button>
-</body>
-<script src="index.js"></script>
+    <h2 id="cart">cart: 0</h2>
+    <h3 id="total">Total: ₹0</h3>
+    <p id="msg"></p>
+    <div class="container">
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/shopping.webp" alt="shoes" />
+        </div>
+        <h3 class="pname">Running shoes</h3>
+        <p>999</p>
+        <button onclick="addToCart(999)">Add to Cart</button>
+        <button onclick="removeFromCart(999)">Remove</button>
+      </div>
+
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/shopping (1).webp" alt="shoes" />
+        </div>
+        <h3 class="pname">Running shoes</h3>
+        <p>888</p>
+        <button onclick="addToCart(888)">Add to Cart</button>
+        <button onclick="removeFromCart(888)">Remove</button>
+      </div>
+
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/shopping (2).webp" alt="shoes" />
+        </div>
+        <h3 class="pname">walking shoes</h3>
+        <p>666</p>
+        <button onclick="addToCart(666)">Add to Cart</button>
+        <button onclick="removeFromCart(666)">Remove</button>
+      </div>
+
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/ball_orange.jpg" alt="ball" />
+        </div>
+        <h3 class="pname">ball</h3>
+        <p>100</p>
+        <button onclick="addToCart(100)">Add to Cart</button>
+        <button onclick="removeFromCart(100)">Remove</button>
+      </div>
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/ball.png" alt="ball" />
+        </div>
+        <h3 class="pname">ball</h3>
+        <p>80</p>
+        <button onclick="addToCart(80)">Add to Cart</button>
+        <button onclick="removeFromCart(80)">Remove</button>
+      </div>
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/ball.png" alt="ball" />
+        </div>
+        <h3 class="pname">ball</h3>
+        <p>80</p>
+        <button onclick="addToCart(80)">Add to Cart</button>
+        <button onclick="removeFromCart(80)">Remove</button>
+      </div>
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/ball.png" alt="ball" />
+        </div>
+        <h3 class="pname">ball</h3>
+        <p>80</p>
+        <button onclick="addToCart(80)">Add to Cart</button>
+        <button onclick="removeFromCart(80)">Remove</button>
+      </div>
+      <div class="product">
+        <div class="img-box">
+          <img src="/shoes_store/images/ball.png" alt="ball" />
+        </div>
+        <h3 class="pname">ball</h3>
+        <p>80</p>
+        <button onclick="addToCart(80)">Add to Cart</button>
+        <button onclick="removeFromCart(80)">Remove</button>
+      </div>
+    </div>
+    <button onclick="resetCart()">Reset</button>
+    <script src="index.js"></script>
+  </body>
 </html>
