@@ -16,84 +16,99 @@
         onkeyup="searchProduct()"
       />
     </div>
+    <br />
+    <button onclick="filterProduct('all')">All</button>
+    <button onclick="filterProduct('shoes')">Shoes</button>
+    <button onclick="filterProduct('ball')">Ball</button>
     <h2 id="cart">cart: 0</h2>
     <h3 id="total">Total: ₹0</h3>
     <p id="msg"></p>
+    <h2>Cart Items</h2>
+    <div id="cartItems"></div>
     <div class="container">
-      <div class="product">
+      <div class="product" data-category="shoes">
         <div class="img-box">
           <img src="/shoes_store/images/shopping.webp" alt="shoes" />
         </div>
         <h3 class="pname">Running shoes</h3>
         <p>999</p>
-        <button onclick="addToCart(999)">Add to Cart</button>
-        <button onclick="removeFromCart(999)">Remove</button>
+
+        <button onclick="decreaseQty(this, 999)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 999)">+</button>
       </div>
 
-      <div class="product">
+      <div class="product" data-category="shoes">
         <div class="img-box">
           <img src="/shoes_store/images/shopping (1).webp" alt="shoes" />
         </div>
         <h3 class="pname">Running shoes</h3>
         <p>888</p>
-        <button onclick="addToCart(888)">Add to Cart</button>
-        <button onclick="removeFromCart(888)">Remove</button>
+        <button onclick="decreaseQty(this, 888)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 888)">+</button>
       </div>
 
-      <div class="product">
+      <div class="product" data-category="shoes">
         <div class="img-box">
           <img src="/shoes_store/images/shopping (2).webp" alt="shoes" />
         </div>
         <h3 class="pname">walking shoes</h3>
         <p>666</p>
-        <button onclick="addToCart(666)">Add to Cart</button>
-        <button onclick="removeFromCart(666)">Remove</button>
+        <button onclick="decreaseQty(this, 666)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 666)">+</button>
       </div>
 
-      <div class="product">
+      <div class="product" data-category="ball">
         <div class="img-box">
           <img src="/shoes_store/images/ball_orange.jpg" alt="ball" />
         </div>
         <h3 class="pname">ball</h3>
         <p>100</p>
-        <button onclick="addToCart(100)">Add to Cart</button>
-        <button onclick="removeFromCart(100)">Remove</button>
+        <button onclick="decreaseQty(this, 100)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 100)">+</button>
       </div>
-      <div class="product">
+      <div class="product" data-category="ball">
         <div class="img-box">
           <img src="/shoes_store/images/ball.png" alt="ball" />
         </div>
         <h3 class="pname">ball</h3>
         <p>80</p>
-        <button onclick="addToCart(80)">Add to Cart</button>
-        <button onclick="removeFromCart(80)">Remove</button>
+        <button onclick="decreaseQty(this, 80)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 80)">+</button>
       </div>
-      <div class="product">
+      <div class="product" data-category="ball">
         <div class="img-box">
           <img src="/shoes_store/images/ball.png" alt="ball" />
         </div>
         <h3 class="pname">ball</h3>
         <p>80</p>
-        <button onclick="addToCart(80)">Add to Cart</button>
-        <button onclick="removeFromCart(80)">Remove</button>
+        <button onclick="decreaseQty(this, 80)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 80)">+</button>
       </div>
-      <div class="product">
+      <div class="product" data-category="ball">
         <div class="img-box">
           <img src="/shoes_store/images/ball.png" alt="ball" />
         </div>
         <h3 class="pname">ball</h3>
         <p>80</p>
-        <button onclick="addToCart(80)">Add to Cart</button>
-        <button onclick="removeFromCart(80)">Remove</button>
+        <button onclick="decreaseQty(this, 80)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 80)">+</button>
       </div>
-      <div class="product">
+      <div class="product" data-category="ball">
         <div class="img-box">
           <img src="/shoes_store/images/ball.png" alt="ball" />
         </div>
         <h3 class="pname">ball</h3>
         <p>80</p>
-        <button onclick="addToCart(80)">Add to Cart</button>
-        <button onclick="removeFromCart(80)">Remove</button>
+        <button onclick="decreaseQty(this, 80)">-</button>
+        <span class="qty">0</span>
+        <button onclick="increaseQty(this, 80)">+</button>
       </div>
     </div>
     <button onclick="resetCart()">Reset</button>
